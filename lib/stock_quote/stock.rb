@@ -10,7 +10,7 @@ module StockQuote
 
   class Stock
 
-   FIELDS = %w(symbol exchange id t e name f_reuters_url f_recent_quarter_date f_annlyal_date f_ttm_date financials kr_recent_quarter_date kr_annual_date kr_ttm_date c l cp ccol op hi lo vo avvo hi52 lo52 mc pe fwpe beta eps dy ldiv shares instown eo sid sname iid iname related summary management moreresources events)
+   FIELDS = %w(keyratios symbol exchange id t e name f_reuters_url f_recent_quarter_date f_annlyal_date f_ttm_date financials kr_recent_quarter_date kr_annual_date kr_ttm_date c l cp ccol op hi lo vo avvo hi52 lo52 mc pe fwpe beta eps dy ldiv shares instown eo sid sname iid iname related summary management moreresources events)
 
    FIELDS.each do |k|
       __send__(:attr_accessor, k.to_sym)
